@@ -1,25 +1,23 @@
 ## Overview
-
-PySynth is a simple music synthesizer written in Python. The goal is not to produce many different sounds, but to have scripts that can turn ABC notation into a WAV file without too much tinkering.
-
-There are three variants: **PySynth A** is faster, only depends on Python 2, and sounds like a cross between a flute and organ. **PySynth B** is more complex in sound and needs [NumPy][2]. It's supposed to be a little closer to a piano. **PySynth S** is more comparable to a guitar, banjo, or harpsichord, depending on note length and pitch. Finally, **PySynth E** is an FM-synthesized e-piano.
-
-The current release of the synthesizer can only play one note at a time. (Although successive notes can overlap in PySynth B and S, but not A.) However, two output files can be mixed together to get stereo sound.
-
+Our project implements a neural network based musical composer which
+can compose music its own.Neural networks process information in a similar
+way the human brain does. Neural network model learns to predict which
+notes will be played at each time step of a musical piece after training the
+system with some classical compositions. The network can only produce
+textual representation of music so converting musical notes into digital mu-
+sic also come under this project.
+## Dependencies
+PyBrain
 ## Sample usage
 
-Read ABC file and output WAV:
+Clone to desktop and from the directory:
 
-    python read_abc.py straw.abc
+    python composer.py
 
-As a module from the Python interpreter:
 
-    from pysynth_b import *
-    make_wav(song, fn = "danube.wav", leg_stac = .7, bpm = 180)
 
-## Site
+### Developers
 
-More documentation and examples at the [PySynth homepage][1].
-
-[1]: http://mdoege.github.io/PySynth/
-[2]: http://numpy.scipy.org/
+Ananthakrishnan MA
+Amal Shaju
+Aishwarya V Krishnan
