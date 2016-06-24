@@ -1,0 +1,153 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'compose.ui'
+#
+# Created: Sat May  7 11:39:35 2016
+#      by: PyQt4 UI code generator 4.11.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt4 import QtCore, QtGui
+
+try:
+    _fromUtf8 = QtCore.QString.fromUtf8
+except AttributeError:
+    def _fromUtf8(s):
+        return s
+
+try:
+    _encoding = QtGui.QApplication.UnicodeUTF8
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig, _encoding)
+except AttributeError:
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig)
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName(_fromUtf8("MainWindow"))
+        MainWindow.resize(800, 600)
+        self.centralwidget = QtGui.QWidget(MainWindow)
+        self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
+        self.frame = QtGui.QFrame(self.centralwidget)
+        self.frame.setGeometry(QtCore.QRect(60, 20, 401, 151))
+        self.frame.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame.setObjectName(_fromUtf8("frame"))
+        self.label = QtGui.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(50, 10, 161, 16))
+        self.label.setObjectName(_fromUtf8("label"))
+        self.note4_2 = QtGui.QPlainTextEdit(self.frame)
+        self.note4_2.setGeometry(QtCore.QRect(260, 60, 51, 51))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        font.setBold(True)
+        font.setWeight(75)
+        self.note4_2.setFont(font)
+        self.note4_2.setObjectName(_fromUtf8("note4_2"))
+        self.note3_2 = QtGui.QPlainTextEdit(self.frame)
+        self.note3_2.setGeometry(QtCore.QRect(190, 60, 51, 51))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        font.setBold(True)
+        font.setWeight(75)
+        self.note3_2.setFont(font)
+        self.note3_2.setObjectName(_fromUtf8("note3_2"))
+        self.note1_2 = QtGui.QPlainTextEdit(self.frame)
+        self.note1_2.setGeometry(QtCore.QRect(50, 60, 51, 51))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        font.setBold(True)
+        font.setWeight(75)
+        self.note1_2.setFont(font)
+        self.note1_2.setObjectName(_fromUtf8("note1_2"))
+        self.note2_2 = QtGui.QPlainTextEdit(self.frame)
+        self.note2_2.setGeometry(QtCore.QRect(120, 60, 51, 51))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        font.setBold(True)
+        font.setWeight(75)
+        self.note2_2.setFont(font)
+        self.note2_2.setObjectName(_fromUtf8("note2_2"))
+        self.frame_2 = QtGui.QFrame(self.centralwidget)
+        self.frame_2.setGeometry(QtCore.QRect(60, 180, 401, 151))
+        self.frame_2.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_2.setObjectName(_fromUtf8("frame_2"))
+        self.label_2 = QtGui.QLabel(self.frame_2)
+        self.label_2.setGeometry(QtCore.QRect(50, 10, 141, 16))
+        self.label_2.setObjectName(_fromUtf8("label_2"))
+        self.sree = QtGui.QRadioButton(self.frame_2)
+        self.sree.setGeometry(QtCore.QRect(30, 40, 131, 26))
+        self.sree.setObjectName(_fromUtf8("sree"))
+        self.sankar = QtGui.QRadioButton(self.frame_2)
+        self.sankar.setGeometry(QtCore.QRect(30, 90, 131, 26))
+        self.sankar.setObjectName(_fromUtf8("sankar"))
+        self.maya = QtGui.QRadioButton(self.frame_2)
+        self.maya.setGeometry(QtCore.QRect(190, 90, 181, 26))
+        self.maya.setObjectName(_fromUtf8("maya"))
+        self.anand = QtGui.QRadioButton(self.frame_2)
+        self.anand.setGeometry(QtCore.QRect(190, 40, 151, 26))
+        self.anand.setObjectName(_fromUtf8("anand"))
+        self.frame_3 = QtGui.QFrame(self.centralwidget)
+        self.frame_3.setGeometry(QtCore.QRect(60, 340, 401, 111))
+        self.frame_3.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_3.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_3.setObjectName(_fromUtf8("frame_3"))
+        self.widget = QtGui.QWidget(self.frame_3)
+        self.widget.setGeometry(QtCore.QRect(20, 30, 361, 58))
+        self.widget.setObjectName(_fromUtf8("widget"))
+        self.horizontalLayout = QtGui.QHBoxLayout(self.widget)
+        self.horizontalLayout.setMargin(0)
+        self.horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
+        self.verticalLayout = QtGui.QVBoxLayout()
+        self.verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
+        self.label_3 = QtGui.QLabel(self.widget)
+        self.label_3.setObjectName(_fromUtf8("label_3"))
+        self.verticalLayout.addWidget(self.label_3)
+        self.tempo = QtGui.QSpinBox(self.widget)
+        self.tempo.setMinimum(90)
+        self.tempo.setMaximum(1000)
+        self.tempo.setSingleStep(10)
+        self.tempo.setObjectName(_fromUtf8("tempo"))
+        self.verticalLayout.addWidget(self.tempo)
+        self.horizontalLayout.addLayout(self.verticalLayout)
+        self.verticalLayout_2 = QtGui.QVBoxLayout()
+        self.verticalLayout_2.setObjectName(_fromUtf8("verticalLayout_2"))
+        self.label_4 = QtGui.QLabel(self.widget)
+        self.label_4.setObjectName(_fromUtf8("label_4"))
+        self.verticalLayout_2.addWidget(self.label_4)
+        self.lineEdit = QtGui.QLineEdit(self.widget)
+        self.lineEdit.setObjectName(_fromUtf8("lineEdit"))
+        self.verticalLayout_2.addWidget(self.lineEdit)
+        self.horizontalLayout.addLayout(self.verticalLayout_2)
+        self.textBrowser = QtGui.QTextBrowser(self.centralwidget)
+        self.textBrowser.setGeometry(QtCore.QRect(480, 20, 281, 481))
+        self.textBrowser.setObjectName(_fromUtf8("textBrowser"))
+        self.composeBtn = QtGui.QPushButton(self.centralwidget)
+        self.composeBtn.setGeometry(QtCore.QRect(60, 470, 401, 31))
+        self.composeBtn.setObjectName(_fromUtf8("composeBtn"))
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtGui.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 24))
+        self.menubar.setObjectName(_fromUtf8("menubar"))
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtGui.QStatusBar(MainWindow)
+        self.statusbar.setObjectName(_fromUtf8("statusbar"))
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow", None))
+        self.label.setText(_translate("MainWindow", "Enter first four notes", None))
+        self.label_2.setText(_translate("MainWindow", "Choose a Raagam", None))
+        self.sree.setText(_translate("MainWindow", "SreeRaagam", None))
+        self.sankar.setText(_translate("MainWindow", "Sankarabharanam", None))
+        self.maya.setText(_translate("MainWindow", "Mayamalava Gowla", None))
+        self.anand.setText(_translate("MainWindow", "AnandaBhairavi", None))
+        self.label_3.setText(_translate("MainWindow", "Enter BPM", None))
+        self.label_4.setText(_translate("MainWindow", "Filename", None))
+        self.composeBtn.setText(_translate("MainWindow", "Compose", None))
+
