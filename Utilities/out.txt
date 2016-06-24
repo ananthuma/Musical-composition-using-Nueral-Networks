@@ -1,0 +1,6 @@
+Musly MIREX similarity matrix (Version: 0.1), Method: timbre
+1	a.wav
+2	1.wav
+Q/R	1	2
+1	0	0.94252
+2	0.94252	0
