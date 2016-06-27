@@ -20,10 +20,19 @@ def compose():
 	starting_notes[2]=convertNotesToInt(form.note3_2.toPlainText())
 	starting_notes[3]=convertNotesToInt(form.note4_2.toPlainText())
 	filename=str(form.lineEdit.text())
+	if(form.sree.isChecked()):
+		selectedraga=1;
+	elif(form.sankar.isChecked()):
+		selectedraga=2;
+	elif(form.maya.isChecked()):
+		selectedraga=3;
+	else:
+		selectedraga=4;
+	
 	bpm=int(form.tempo.text())
 	print starting_notes,filename
-	txt= comp.composer("filename",starting_notes,bpm,"anandb",filename)
-	form.textBrowser.setText(Qstring(txt))
+	txt= comp.composer("filename",starting_notes,bpm,selectedraga,filename)
+	
 def main():
     form.composeBtn.clicked.connect(compose)
    
